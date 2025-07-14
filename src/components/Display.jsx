@@ -1,6 +1,7 @@
 import { Route, Routes, useLocation } from "react-router-dom"
 import DisplayHome from "./DisplayHome"
 import DisplayAlbum from "./DisplayAlbum"
+import DisplayPlaylist from "./DisplayPlaylist"
 import Search from "./Search"
 import { useEffect, useRef } from "react"
 import { albumsData } from "../assets/assets"
@@ -24,6 +25,7 @@ const Display = () => {
         <Routes>
             <Route path="/" element={<DisplayHome/>}/>
             <Route path="/album/:id" element={<DisplayAlbum/>}/>
+            <Route path="/playlist/:id" element={<DisplayPlaylist/>}/>
             <Route path="/search" element={<Search/>}/>
         </Routes>
     </div>
